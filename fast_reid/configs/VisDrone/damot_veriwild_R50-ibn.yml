@@ -1,0 +1,5 @@
+# DAMOT vehicle ReID configuration.
+_BASE_: ../VehicleID/bagtricks_R50-ibn.yml
+
+MODEL:
+  WEIGHTS: pretrained/veriwild_bot_R50-ibn.pth
