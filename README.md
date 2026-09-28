@@ -62,12 +62,12 @@ During training, a **Training-time Difference Enhancement Module (TDEM)** recons
 ## Framework
 
 <p align="center">
-  <a href="assets/damot_overview.png">
-    <img src="assets/damot_overview.png" width="100%" alt="DAMOT architecture: training-time difference enhancement with BRM, background smoothing and spatial-channel attention, followed by UCMC and confidence-stratified association.">
+  <a href="damot_overview.png">
+    <img src="damot_overview.png" width="100%" alt="DAMOT architecture: training-time difference enhancement with BRM, background smoothing and spatial-channel attention, followed by UCMC and confidence-stratified association.">
   </a>
 </p>
 
-<p align="center"><sub><b>DAMOT architecture.</b> TDEM enhances the highest-resolution feature during training; UCMC and confidence-stratified association preserve trajectories during tracking.</sub><br><sub><a href="assets/damot_overview.png">High-resolution PNG</a> · <a href="assets/damot_overview.pdf">Original PDF</a></sub></p>
+<p align="center"><sub><b>DAMOT architecture.</b> TDEM enhances the highest-resolution feature during training; UCMC and confidence-stratified association preserve trajectories during tracking.</sub><br><sub><a href="damot_overview.png">High-resolution PNG</a> · <a href="damot_overview.pdf">Original PDF</a></sub></p>
 
 | Component | Role | Active stage |
 | :--- | :--- | :--- |
@@ -102,12 +102,12 @@ In `model.eval()` mode, the detector bypasses TDEM and feeds the original multi-
 ## Qualitative Comparison
 
 <p align="center">
-  <a href="assets/qualitative_comparison.png">
-    <img src="assets/qualitative_comparison.png" width="100%" alt="AMF-MOT, STDFormer, SFTrack and DAMOT compared over three consecutive frames in small-object scenes and scenes with viewpoint variation.">
+  <a href="qualitative_comparison.png">
+    <img src="qualitative_comparison.png" width="100%" alt="AMF-MOT, STDFormer, SFTrack and DAMOT compared over three consecutive frames in small-object scenes and scenes with viewpoint variation.">
   </a>
 </p>
 
-<p align="center"><sub><b>Tracking across consecutive frames.</b> Comparison with AMF-MOT, STDFormer, and SFTrack under tiny-object and viewpoint-change challenges.</sub><br><sub><a href="assets/qualitative_comparison.png">High-resolution PNG</a> · <a href="assets/qualitative_comparison.pdf">Original PDF</a></sub></p>
+<p align="center"><sub><b>Tracking across consecutive frames.</b> Comparison with AMF-MOT, STDFormer, and SFTrack under tiny-object and viewpoint-change challenges.</sub><br><sub><a href="qualitative_comparison.png">High-resolution PNG</a> · <a href="qualitative_comparison.pdf">Original PDF</a></sub></p>
 
 | Small-object scenes | Viewpoint variation |
 | :--- | :--- |
@@ -291,7 +291,7 @@ python tools/demo_track.py damot \
 | [`tools/eval_damot.py`](tools/eval_damot.py) | Tracking evaluation entry point |
 | [`scripts/train_damot.sh`](scripts/train_damot.sh) | Training launcher |
 | [`scripts/evaluate_damot.sh`](scripts/evaluate_damot.sh) | Evaluation launcher |
-| [`assets/`](assets/) | Framework and qualitative-comparison figures in PNG and PDF |
+| [`damot_overview.png`](damot_overview.png) · [`qualitative_comparison.png`](qualitative_comparison.png) | Framework and qualitative-comparison figures; original PDFs are included alongside the PNGs |
 
 ## Citation
 
